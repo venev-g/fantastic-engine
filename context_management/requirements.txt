@@ -186,11 +186,8 @@ terminado==0.18.1
 thinc==8.3.6
 threadpoolctl==3.6.0
 tinycss2==1.4.0
-tokenizers==0.21.1
 toml==0.10.2
-torch==2.6.0+cpu
 tornado==6.4.2
-tqdm==4.67.1
 traitlets==5.14.3
 transformers==4.51.3
 typer==0.15.3
