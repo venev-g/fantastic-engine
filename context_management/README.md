@@ -3,7 +3,7 @@
 
 A memory-augmented chatbot built with **Streamlit**, **LangChain**, and **Google's Gemini**, designed to remember and organize user-specific information like name, preferences, goals, and more — enabling truly personalized conversations.
 
-[Open in Streamlit](https://gemini-chatbot.streamlit.app/)
+[Open in Streamlit](https://context-bot.streamlit.app/)
 
 ---
 
