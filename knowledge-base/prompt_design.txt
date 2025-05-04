@@ -1,0 +1,32 @@
+Generate proper and efficient codes for this task: Storing a document in vector database.
+Instructions:
+
+1. Analyze the document:
+Document has headings/titles, text, pargraphs, strikedout text, highlighted text, 
+tables and some images in it. Process the document accordingly.
+
+2. After that, The document should be converted into chunks according to following
+chunking strategies:
+    --> Title + Content chunking (Hierarchical Chunking)
+    --> Paragraph-Based Chunking (with line breaks)
+    --> Table-Aware Chunking → Neo4j Graph
+    --> Metadata-Aware Chunking
+
+POINTS TO BE AVOID DURING CHUNKING:
+Fixed sized token chunking: Will randomly split tables and rules.
+Blind sentence chunking: May split structured logic and cause hallucination.
+
+3. Finally use a robust embedding model for embedding all these stuff.
+Use a model which can be used locally.
+
+4. Use these vector DBs accordingly: Milvus and Neo4j
+
+| Content Type               | Chunking Strategy              | Storage        |
+| -------------------------- | ------------------------------ | -------------- |
+| Rule explanations          | Title + Content                | Milvus         |
+| Business logic flows       | Paragraph-based                | Milvus         |
+| Tables                     | Row → triplet (graph chunking) | Neo4j          |
+| User scenarios             | Paragraph-based                | Milvus         |
+| System interactions        | Paragraph-based                | Neo4j + Milvus |
+
+5. Integrate all these with Langchain incorporating efficient retrieval techniques.

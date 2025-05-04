@@ -1,0 +1,12 @@
+langchain
+sentence-transformers
+pymilvus
+neo4j
+llama-cpp-python
+pypdf2
+python-docx
+beautifulsoup4
+pytesseract
+pillow
+pandas
+numpy
