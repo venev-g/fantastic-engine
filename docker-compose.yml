@@ -15,5 +15,3 @@ services:
       - ./volumes/neo4j/data:/data
       - ./volumes/neo4j/logs:/logs
       - ./volumes/neo4j/import:/import
-
-    restart: always

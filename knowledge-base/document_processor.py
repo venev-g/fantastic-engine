@@ -26,7 +26,7 @@ class DocumentProcessor:
         self.neo4j_graph = None
         
     def connect_to_databases(self, milvus_host="localhost", milvus_port=19530, 
-                             neo4j_uri="bolt://localhost:7687", neo4j_user="neo4j", neo4j_password="password"):
+                             neo4j_uri="bolt://localhost:7687", neo4j_user="neo4j", neo4j_password="venev"):
         """Connect to Milvus and Neo4j databases."""
         # Initialize Neo4j connection
         self.neo4j_graph = Neo4jGraph(
