@@ -36,4 +36,4 @@ The retrieval should be Hybrid like combining results from Milvus and Neo4j.
 
 
 
-GOOGLE_API_KEY="AIzaSyD0YvhLFGBmYiS2KYnuRjG1F-xdxJ2pmO4" python knowledge-base/notebook_export.py
+GOOGLE_API_KEY python knowledge-base/notebook_export.py
