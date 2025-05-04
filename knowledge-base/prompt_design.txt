@@ -1,4 +1,4 @@
-Generate proper and efficient codes for this task: Storing a document in vector database.
+Generate proper and efficient solution for this task: Storing a document in vector database.
 Instructions:
 
 1. Analyze the document:
@@ -29,4 +29,11 @@ Use a model which can be used locally.
 | User scenarios             | Paragraph-based                | Milvus         |
 | System interactions        | Paragraph-based                | Neo4j + Milvus |
 
-5. Integrate all these with Langchain incorporating efficient retrieval techniques.
+5. Integrate all these with Langchain (latest version: v0.3) incorporating efficient retrieval techniques.
+The retrieval should be Hybrid like combining results from Milvus and Neo4j.
+
+6. I want all this in a jupyter notebook. Use gemini llm model: gemini-1.5-flash-8b via API
+
+
+
+GOOGLE_API_KEY="AIzaSyD0YvhLFGBmYiS2KYnuRjG1F-xdxJ2pmO4" python knowledge-base/notebook_export.py
