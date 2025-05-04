@@ -39,7 +39,6 @@ print("All required libraries imported successfully.")
 # ## 2. Document Analysis and Preprocessing
 # We need to create functions to load and analyze document structure, identifying various elements like headings, paragraphs, tables, and images.
 
-# In[14]:
 
 
 class DocumentAnalyzer:
@@ -1718,7 +1717,7 @@ def process_document(file_path: str, milvus_host='localhost', milvus_port='19530
         print(f"Warning: Failed to set up Milvus: {e}")
     
     try:
-        vector_db_manager.setup_neo4j(uri=neo4j_uri, username=neo4j_username, neo4j_password=neo4j_password)
+        vector_db_manager.setup_neo4j(uri=neo4j_uri, username=neo4j_username, password=neo4j_password)
     except Exception as e:
         print(f"Warning: Failed to set up Neo4j: {e}")
     
@@ -1772,5 +1771,5 @@ def query_document(retriever, query: str, k: int = 5):
 
 # Example usage:
 retriever = process_document("knowledge-base/data/IT449_HR Roll back for policy Cancellation v2.1.docx")
-results, answer = query_document(retriever, "What should HR system do?")
+results, answer = query_document(retriever, "Explain the Particulars, INR and logic table")
 print("Retrieved documents:", results, "\nLLM answer:", answer)
