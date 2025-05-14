@@ -1,0 +1,43 @@
+Gemini model initialized successfully
+Using multi-query retriever
+Querying retriever: milvus_IT449_HR Roll back for policy Cancellation v2_business_logic (k=3)
+Querying retriever: milvus_IT449_HR Roll back for policy Cancellation v2_system_interaction (k=3)
+Querying retriever: milvus_IT449_HR Roll back for policy Cancellation v2_user_scenario (k=3)
+Querying retriever: neo4j (k=3)
+Gemini model initialized successfully
+Retrieved documents:
+
+Document 1 [Source: IT449_HR Roll back for policy Cancellation v2]:
+HR behaviour on policy cancellation
+
+HR rollback in rebooking and reinstatement scenarios
+
+Accrued a...
+Similarity score: 0.7931
+
+Document 2 [Source: IT449_HR Roll back for policy Cancellation v2]:
+HR behaviour on policy cancellation
+
+HR rollback in rebooking and reinstatement scenarios
+
+Accrued a...
+Similarity score: 0.7931
+
+Document 3 [Source: IT449_HR Roll back for policy Cancellation v2]:
+3 Scenarios to be tested on HRP Utilized policies:
+
+In case if renewed policy is cancelled then accu...
+Similarity score: 0.7898
+
+
+LLM Answer:
+Accrued and unclaimed HR remains available for claim up to 3 6 months (configurable) post cancellation (Document 1,
+Document 2). 
+In cases of a renewed policy cancellation, accumulated HR points need to be rolled back to the previous year's 
+policy (in the HR portal) so they can be utilized if the policy is rebooked (Document 3). 
+A refund should not be generated for a Health Return receipt (Document 3).
+
+The information provided describes the rollback process for HR points, 
+but doesn't explain what happens to all aspects of HR in a cancellation. 
+Further details about other potential HR impacts 
+(e.g., if claims are active and in progress, what happens to them upon cancellation) are missing from the provided context.
