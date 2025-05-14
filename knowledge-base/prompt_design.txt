@@ -33,7 +33,3 @@ Use a model which can be used locally.
 The retrieval should be Hybrid like combining results from Milvus and Neo4j.
 
 6. I want all this in a jupyter notebook. Use gemini llm model: gemini-1.5-flash-8b via API
-
-
-
-GOOGLE_API_KEY python knowledge-base/notebook_export.py
